@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@300;400;500;600&family=Nunito+Sans:wght@200;300;400;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@300;400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,200;1,300&family=Nunito+Sans:wght@200;300;400;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 6.5rem;
+  background-color: black;
+  z-index: 100000;
+}
+.nav h2 {
+  color: brown;
+  font-size: 2.5rem;
+}
+
+.nav h2 span {
+  font-style: italic;
+}
+
+#item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#item li {
+  list-style: none;
+  padding: 50px;
+}
+
+#item li a {
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: brown;
+}
+#item li a:hover,
+#item .icon i:hover {
+  color: aliceblue;
+}
+
+#item .icon i {
+  color: white;
+  padding-right: 30px;
+  font-weight: bold;
+}
+
+.back {
+  background-image: url(images/IMG_1300.JPG);
+  width: 100%;
+  height: 100vh;
+  background-size: contain;
+  z-index: -1;
+}
+.back .overlay {
+  background: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+}
+.mid {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transition: translate(-50%, -50%);
+  text-align: center;
+}
+.mid p {
+  color: rgb(175, 170, 170);
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 1.3rem;
+}
+.mid h2 {
+  color: rgb(182, 171, 171);
+  font-size: 3rem;
+}
+.mid h2 span {
+  font-style: italic;
+}
+.mid .button {
+  margin-top: 2rem;
+}
+.mid .button a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.mid .button a.simple {
+  color: brown;
+  font-weight: 500;
+  padding: 0.9rem;
+}
+.mid .button a.simple:hover {
+  color: aliceblue;
+}
+.mid .button a.border {
+  color: brown;
+  font-weight: 500;
+  padding: 0.9rem;
+  border-style: solid;
+  border-radius: 3px;
+}
+.mid .button a.border:hover {
+  background: aliceblue;
+  border: 1px solid aliceblue;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 8rem 15rem;
+  justify-content: space-between;
+  background: rgb(26, 24, 24);
+}
+.details h3,
+h5 {
+  color: aliceblue;
+}
+
+.details .one {
+  width: 45%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.details .one h3 {
+  font-size: 2.5rem;
+  padding-bottom: 1.1rem;
+}
+.details .one h3 span {
+  font-style: italic;
+}
+.details .one h5 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-bottom: 1.2rem;
+}
+.details .one p {
+  color: rgb(40, 52, 63);
+  font-size: 1.3rem;
+  padding-bottom: 3rem;
+}
+.details .one a {
+  color: white;
+  background: brown;
+  padding: 0.9rem 0rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+.details .one a:hover {
+  color: brown;
+  background: white;
+}
+.details .two {
+  width: 45%;
+  border-left: 1px solid rgb(165, 178, 189);
+  padding-left: 4rem;
+}
+.details .two h3 {
+  font-size: 2.5rem;
+  padding-bottom: 1.1rem;
+}
+.details .two h5 {
+  font-size: 1.1rem;
+}
+.details .two p {
+  font-size: 1.1rem;
+  color: rgb(40, 52, 63);
+  margin-bottom: 0.8;
+}
+.info {
+  background: cornsilk;
+  padding: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.info .statement {
+  width: 39%;
+}
+.info .statement h2 {
+  color: rgb(27, 25, 25);
+  font-size: 2.1rem;
+  padding-bottom: 1.8rem;
+}
+.info .statement p {
+  color: rgb(95, 92, 92);
+  font-size: 1.1rem;
+}
+
+.info .people {
+  width: 57%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.info .people .info .people .team1 .name i,
+.info .people .team1 .profession i {
+  color: #212529;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.info .people .team1 {
+  color: #212529;
+  width: 45%;
+  height: auto;
+  box-sizing: border-box;
+  background: burlywood;
+}
+.info .people .team1 .img img {
+  width: 93%;
+  object-fit: cover;
+}
+.info .people .team1 .name,
+.info .people .team1 .profession {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.info .people .team1 .profession2 p {
+  color: #212529;
+}
+.info .people .team1 .name {
+  padding: 5px 20px 0px 20px;
+}
+.info .people .team1 .profession {
+  padding: 0px 20px 5px 20px;
+}
+.info .people .team1 .name h2 {
+  color: #212529;
+  font-size: 1.5rem;
+}
+
+.info .people .team2 {
+  width: 45%;
+  height: auto;
+  box-sizing: border-box;
+  background: burlywood;
+}
+.info .people .team2 .img2 img {
+  width: 100%;
+  object-fit: cover;
+}
+.info .people .team2 .name2,
+.info .people .team2 .profession2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.info .people .team2 .name2 h2 {
+  color: #212529;
+  font-size: 1.5rem;
+}
+.info .people .team2 .name2 i,
+.info .people .team2 .profession2 i {
+  color: #212529;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.info .people .team2 .profession2 p {
+  color: #212529;
+}
+.info .people .team2 .name2 {
+  padding: 5px 20px 0px 20px;
+}
+.info .people .team2 .profession2 {
+  padding: 0px 20px 5px 20px;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 8rem;
+}
+
+.wrap .paragraph {
+  font-size: 1.3rem;
+  color: rgb(95, 92, 92);
+  padding-bottom: 6px;
+  text-align: center;
+}
+.wrap .h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: rgb(40, 52, 63);
+  padding-bottom: 50px;
+  text-align: center;
+}
+.wrap .category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap .category .team1 .img img {
+  width: 100%;
+  object-fit: cover;
+}
+.wrap .category .team1 {
+  color: #212529;
+  width: 32%;
+  height: auto;
+  box-sizing: border-box;
+  background: burlywood;
+}
+
+.wrap .category .team1 .teamdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.wrap .category .team1 .teamdetails .name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px 0px 30px;
+}
+.wrap .category .team1 .teamdetails .name .namedetails h2 {
+  color: #212529;
+  font-size: 1.7rem;
+}
+.wrap .category .team1 .teamdetails .name .namedetails p {
+  color: #212529;
+  font-size: 1.1rem;
+}
+.wrap .category .team1 .teamdetails .name .namedetails p span {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.wrap .category .team1 .teamdetails .name .num {
+  font-size: 1.1rem;
+  background: brown;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  border-radius: 50%;
+}
+.wrap .category .team1 .profession2 p {
+  font-size: 1.1rem;
+  color: dimgray;
+  padding: 15px 30px 30px 30px;
+}
+.contact {
+  padding: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact .form {
+  width: 45%;
+}
+.contact .form h2 {
+  font-size: 2rem;
+  color: #212529;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.contact .form .submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contact .form .submit input,
+.contact .form .submit textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgba(220, 220, 220, 0.795);
+  outline: none;
+  margin: 13px 0px;
+}
+.contact .form .submit input:focus,
+.contact .form .submit textarea:focus {
+  border: 1px solid black;
+}
+.contact .form .submit input::placeholder {
+  color: lightgray;
+  font-size: 1.1rem;
+}
+.contact .form .submit textarea::placeholder {
+  color: lightgray;
+  font-size: 1.1rem;
+  height: 80%;
+}
+
+.contact .form .submit a {
+  font-size: 1.1rem;
+  color: white;
+  margin: 13px 0px;
+  text-align: center;
+  background-color: black;
+  padding: 10px 30px;
+  text-decoration: none;
+  width: 100%;
+}
+.contact .map h2 {
+  font-size: 2rem;
+  color: #212529;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.contact .map p {
+  font-size: 1.1rem;
+  color: #212529;
+  width: 100%;
+  padding-bottom: 30px;
+}
